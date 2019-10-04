@@ -8,7 +8,7 @@ For development purposes only, not production ready.
 `docker build -t mail-sink .`
 
 ## To run
-`docker run --name mail-sink -p 8765:8080 -p 8025:8025 -d mail-sink`
+`docker run --name mail-sink -p 8765:8080 -p 8025:8025 -d primednumber/mail-sink`
 
 ## To access via browser
 
@@ -20,7 +20,7 @@ password = smtp
 
 ## To send email
 
-### Send email Within docker
+### Configuration to send email from docker
 
 ```
 SmtpHost=mail-sink
@@ -29,7 +29,7 @@ SmtpUser=smtp
 SmtpPassword=smtp
 ```
 
-### Send email local machine
+### Configuration to send email from local machine
 
 ```
 SmtpHost=localhost
